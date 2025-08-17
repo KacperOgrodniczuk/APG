@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8087348961878839463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8087348961878839461}
+  - component: {fileID: 8087348961878839462}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8087348961878839461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8087348961878839463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8087348961878839462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8087348961878839463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82be78d87e1ae2246840832e80a622a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerSwordSwoosh
+    clip: {fileID: 8300000, guid: b44e632b3140f08469821765174cf95d, type: 3}
+    volume: 0.375
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemySwordSwoosh
+    clip: {fileID: 8300000, guid: cc024bb62897afc42bc801d0b481c467, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: 7298972d3fe865147b2e8ac734359fae, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyJump
+    clip: {fileID: 8300000, guid: 17df4793710fffb4a95d4c221abec3d7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TakeDamage
+    clip: {fileID: 8300000, guid: 3579eb95e9dab474b9ad62864612fa34, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BowString
+    clip: {fileID: 8300000, guid: 5c986d4fcc7844545859791caac1a4ef, type: 3}
+    volume: 0.75
+    pitch: 1.1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerTakeDamage
+    clip: {fileID: 8300000, guid: d05ae932ab9e1b64e99de24b266a6bd6, type: 3}
+    volume: 0.375
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShieldHit
+    clip: {fileID: 8300000, guid: efb146412e364d24bb83697b8d574257, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Roll
+    clip: {fileID: 8300000, guid: 120f20eb06f26e24d86efd3b1f9d0b04, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ShieldUp
+    clip: {fileID: 8300000, guid: d5c0721f127999a45829cfec68b01374, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 0794a4a4ca3e2034f99f770ced95b658, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AddScore
+    clip: {fileID: 8300000, guid: b74781c0a4755be48b35f22b81800018, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PickUp
+    clip: {fileID: 8300000, guid: 1665d6fd82b6c284fb57cacfcb5f766f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BlockLanding
+    clip: {fileID: 8300000, guid: a75c3f99afea1b04babb0a740d278d45, type: 3}
+    volume: 0.625
+    pitch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  BackgroundTracks:
+  - name: BGMusic
+    clip: {fileID: 8300000, guid: 2de1712c823aa3c4c8e801883205dcac, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BGMusic1
+    clip: {fileID: 8300000, guid: f2aa9099fcbed504bbbffbafaf530c51, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BGMusic2
+    clip: {fileID: 8300000, guid: e2c54ec0375939940a5f78b67e2e185b, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BGMusic3
+    clip: {fileID: 8300000, guid: 913f6b9e797dd4c4594e82fe1d03a211, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BGMusic4
+    clip: {fileID: 8300000, guid: 18385c7cf179cc146a1c6a150e1b92b4, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BGMusic5
+    clip: {fileID: 8300000, guid: aa2b854d3cfc84645859225d41e63a89, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  musicMixerGroup: {fileID: 8470031261136700858, guid: 378498b562b6ddd48903c20876a0cdcd, type: 2}
+  SFXMixerGroup: {fileID: -1741601747407563831, guid: 378498b562b6ddd48903c20876a0cdcd, type: 2}

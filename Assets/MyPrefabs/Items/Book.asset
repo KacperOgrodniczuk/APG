@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0348cf6bc089d174facde27472c64dde, type: 3}
+  m_Name: Book
+  m_EditorClassIdentifier: 
+  itemName: Book
+  description: Contains nothing but gibberish. The gibberish turns out to be a spell.
+    Greatly reduces enemy attack speed.
+  icon: {fileID: 21300000, guid: 1c82fa18a9230df4f9a0aa981fe3a341, type: 3}
+  itemType: 44
