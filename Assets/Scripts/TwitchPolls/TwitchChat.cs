@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Sockets;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -22,6 +23,9 @@ public class TwitchChat : MonoBehaviour
     [SerializeField] Text voteText1;
     [SerializeField] Text voteText2;
     [SerializeField] Text voteText3;
+    [SerializeField] TMP_Text voteCountAText;
+    [SerializeField] TMP_Text voteCountBText;
+    [SerializeField] TMP_Text voteCountCText;
     [SerializeField] Text currentMod;
     [SerializeField] PlayerController playerController;
     [SerializeField] PlayerSpeech playerSpeech;
@@ -115,6 +119,12 @@ public class TwitchChat : MonoBehaviour
                 else if (message.ToLower().Contains("middle")) blockVoteB++;
                 else if (message.ToLower().Contains("right")) blockVoteC++;
             }
+
+            //update the numbers to player can see votes in real time.
+
+            voteCountAText.text = "A. " + voteCountA.ToString();
+            voteCountBText.text = "B. " + voteCountB.ToString();
+            voteCountCText.text = "C. " + voteCountC.ToString();
         }
     }
 
@@ -406,6 +416,11 @@ public class TwitchChat : MonoBehaviour
             voteCountA = 0;
             voteCountB = 0;
             voteCountC = 0;
+
+            //update the numbers to player can see votes in real time.
+            voteCountAText.text = "A. " + voteCountA.ToString();
+            voteCountBText.text = "B. " + voteCountB.ToString();
+            voteCountCText.text = "C. " + voteCountC.ToString();
 
             //risky frisky while loops (not really, they just reroll the string from the list if it's the same as one that's already rolled)
             string a = polls[Random.Range(0, polls.Count)];
